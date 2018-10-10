@@ -1,5 +1,8 @@
 package rockola;
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import rockola.rev_20180829.Disco;
 
 /**
  * Este programa permite al usuario administrar discos ingresando: * Nombre del
@@ -12,7 +15,14 @@ public class Rockola {
     /* Metodo principal */
     public static void main(String[] args) {
 
+        Scanner sc2; 
+        String algo = new String("algo");
+        
+        String[] myStrings = {"lunes", "martes"};
+        
         Scanner sc = new Scanner(System.in);
+        
+        sc.
 
         // limpiar la pantalla
         limpiarPantalla();
@@ -125,10 +135,29 @@ public class Rockola {
         
     }
 
+    /**
+     * Este metodo me permite limpiar la pantalla de la consola
+     * 
+     * @author <a href="mailto:mauricio.rodriguez@globant.com">mauricio.rodriguez</a>
+     */
     private static void limpiarPantalla() {
         for (int i = 0; i < 40; i++) {
             System.out.println();
         }
+    }
+    
+    private void test() {
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 ==0 )
+                continue;
+            System.out.println(i);
+        }
+        
+        ArrayList<String> strings = new ArrayList<>();
+        for (String iterable_element : strings) {
+            System.out.println(iterable_element);
+        }
+        
     }
 
 }

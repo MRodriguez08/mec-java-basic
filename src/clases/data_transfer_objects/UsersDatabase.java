@@ -107,7 +107,7 @@ public class UsersDatabase {
             oos.writeObject(USERS);
             oos.close();
         } catch (IOException e) {
-            USERS = new ArrayList<User>();
+            e.printStackTrace();
         }
 
     }
@@ -119,7 +119,7 @@ public class UsersDatabase {
             USERS = (ArrayList<User>) ois.readObject();
             ois.close();
         } catch (Exception e) {
-            e.printStackTrace();
+            USERS = new ArrayList<User>();
         }
     }
 
